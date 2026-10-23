@@ -1,75 +1,46 @@
-# React + TypeScript + Vite
+# Scotland Rugby Squad Selector
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + TypeScript + Vite depth-chart workspace, styled with Tailwind CSS.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Use Node.js 22.13+ or 24+. The existing ESLint 10 toolchain requires at least Node 22.13 on the Node 22 release line.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```sh
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+On Windows PowerShell, use `npm.cmd` if execution policy blocks `npm.ps1`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Checks
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```sh
+npm run lint
+npm test
+npm run build
+npm run preview
 ```
+
+## Using the chart
+
+- Select one to three positions in the overview, or select a position-group preset.
+- Search the player pool by name, club, position name or number.
+- Choose Assign, select any position and grade, then confirm.
+- Use Move to change a placement, arrow buttons to change order within a lane, or Remove to return a player to the unassigned pool.
+- Counts and classification summaries update from actual placements.
+
+All catalogue records are fictional, unverified sample data, not assertions about real players or Scottish eligibility. Edit `src/data/players.json` to maintain the local catalogue. IDs must be stable and unique. Every record is explicitly marked `sample: true`.
+
+## Structure
+
+- `src/domain/rugby.ts`: position, grade and player definitions.
+- `src/data/`: local sample JSON and catalogue validation.
+- `src/features/depth-chart/`: page, position columns, placement controls, pure reducer and selectors, unit tests.
+- `src/features/player-pool/`: searchable pool and shared initials identity.
+
+The chart stores one primary placement per player ID. Player position metadata is advisory; users may assign any position. Independent chart objects can place the same player differently. Optional additional-position ratings are not part of this model.
+
+## Current scope
+
+Phases 1 and 2 only. Charts start empty and live in React state; refreshing clears placements. No browser persistence, drag-and-drop, authentication, Supabase, community statistics, photos, sharing, or World Cup squad selection. The local JSON catalogue is maintained by the project administrator; there is no administrator UI.

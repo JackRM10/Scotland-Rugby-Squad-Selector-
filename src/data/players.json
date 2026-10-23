@@ -1,0 +1,182 @@
+[
+    {
+        "id":  "sample-001",
+        "name":  "Jamie Fraser",
+        "club":  "Caledonia RFC",
+        "primaryPosition":  1,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-002",
+        "name":  "Euan Reid",
+        "club":  "Capital RFC",
+        "primaryPosition":  2,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-003",
+        "name":  "Callum Grant",
+        "club":  "Border RFC",
+        "primaryPosition":  3,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-004",
+        "name":  "Fraser Campbell",
+        "club":  "Highland RFC",
+        "primaryPosition":  4,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-005",
+        "name":  "Ross Murray",
+        "club":  "Caledonia RFC",
+        "primaryPosition":  5,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-006",
+        "name":  "Angus Stewart",
+        "club":  "Capital RFC",
+        "primaryPosition":  6,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-007",
+        "name":  "Finlay Scott",
+        "club":  "Border RFC",
+        "primaryPosition":  7,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-008",
+        "name":  "Hamish Douglas",
+        "club":  "Highland RFC",
+        "primaryPosition":  8,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-009",
+        "name":  "Lewis Kerr",
+        "club":  "Caledonia RFC",
+        "primaryPosition":  9,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-010",
+        "name":  "Oliver Mackay",
+        "club":  "Capital RFC",
+        "primaryPosition":  10,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-011",
+        "name":  "Blair Robertson",
+        "club":  "Border RFC",
+        "primaryPosition":  11,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-012",
+        "name":  "Cameron Wallace",
+        "club":  "Highland RFC",
+        "primaryPosition":  12,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-013",
+        "name":  "Arran Sinclair",
+        "club":  "Caledonia RFC",
+        "primaryPosition":  13,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-014",
+        "name":  "Rory Davidson",
+        "club":  "Capital RFC",
+        "primaryPosition":  14,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-015",
+        "name":  "Lachlan Wilson",
+        "club":  "Border RFC",
+        "primaryPosition":  15,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-016",
+        "name":  "Gregor Ross",
+        "club":  "Highland RFC",
+        "primaryPosition":  1,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-017",
+        "name":  "Alasdair Brown",
+        "club":  "Caledonia RFC",
+        "primaryPosition":  2,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    },
+    {
+        "id":  "sample-018",
+        "name":  "Duncan Hunter",
+        "club":  "Capital RFC",
+        "primaryPosition":  3,
+        "secondaryPositions":  [
+
+                               ],
+        "sample":  true
+    }
+]
